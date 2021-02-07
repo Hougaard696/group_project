@@ -1,0 +1,52 @@
+/*Top Nav bar*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #31708E
+}
+/*top nav text color*/
+.topnav a {
+  float: left;
+  color: #F7F9FB;
+  text-align: center;
+  padding: 3px 6px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*top nav Hover color*/
+.topnav a:hover {
+  background-color: #F7F9FB;
+  color: black;
+}
+/*top nav active page color*/
+.topnav a.active {
+  background-color: #5085A5;
+  color: white;
+}
+
+/*top nav text color*/
+/* Footer */
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #31708E;
+  margin-top: 1px;
+}
+
+/*Button*/
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.learnmore {background-color: #336699;} 
+.learnmore:hover {background: #4080bf;}
