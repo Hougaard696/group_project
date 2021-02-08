@@ -6,11 +6,15 @@
   </head>
   <body>
     <style>
+
+      
 /* Navbar container */
 .navbar {
   overflow: hidden;
   background-color: #31708E;
-  font-family: Arial;
+  font-family: Arial; 
+ 
+
 }
 
 /*top nav text color*/
@@ -39,6 +43,7 @@
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+   
 }
 
 /*top nav Hover color*/
@@ -54,6 +59,8 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  
+  border-radius: 10px; 
 }
 
 /* Links inside the dropdown */
@@ -66,7 +73,7 @@
   text-align: left;
 }
 
-/* Add a grey overlay to dropdown links on hover */
+/* Add a overlay to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #DDD;
 }
@@ -83,7 +90,7 @@
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 2px;
 }
 
 /* Clearfix (clear floats) */
@@ -92,9 +99,10 @@
   clear: both;
   display: table;
 }
-/* Border on Subscribe form */
+/* Border/dropshadow on Subscribe form */
 form {
   border: 3px solid #DDD;
+  box-shadow: 8px 8px 8px -8px #999;
 }
 /* Top & bottom shader for Subscribe now */
 .container {
@@ -136,7 +144,7 @@ input[type=submit]:hover {
   padding: 10px;
 }
       
-</style> <nav>
+</style> <center><nav>
       <div class="header">
         <div class="navbar"> <a href="index.html">Home</a>
           <div class="dropdown"> <button class="dropbtn" onclick="myFunction()">Gallery
@@ -149,14 +157,14 @@ input[type=submit]:hover {
 
             style="float:right">Admin</a> </div>
       </div>
-    </nav>
+    </nav></center>
     <div class="row">
       <div class="column">
         <h1>Welcome to our gallery site</h1>
         <br>
         Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum
-        Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum
         Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum
+        Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum
         Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum
       </div>
       <div class="column">
@@ -166,9 +174,9 @@ input[type=submit]:hover {
             <p>Subscribe today in order to get our monthly news letter with the
               newest photo's</p>
           </div>
-          <div class="container" style="background-color:white"> <input placeholder="Email address"
+          <div class="container"> <input placeholder="Email address" name="mail"
 
-              name="mail" required="" type="text"> </div>
+              required="" type="text"> </div>
           <div class="container"> <input value="Subscribe" type="submit"> </div>
         </form>
       </div>
@@ -178,17 +186,17 @@ input[type=submit]:hover {
     <p> </p>
     <p> </p>
     <div class="row">
-      <div class="column"> <img src="https://www.w3schools.com/howto/img_snow.jpg"
+      <div class="column"> <img src="https://www.stockvault.net/data/2019/08/31/269064/thumb16.jpg"
 
           alt="Snow" style="width:100%">
         <center>Featured image1</center>
       </div>
-      <div class="column"> <img src="https://www.w3schools.com/howto/img_snow.jpg"
+      <div class="column"> <img src="https://i.redd.it/j74j110bpzp01.jpg" alt="Forest"
 
-          alt="Forest" style="width:100%">
+          style="width:100%">
         <center>Featured image2</center>
       </div>
-      <div class="column"> <img src="https://www.w3schools.com/howto/img_snow.jpg"
+      <div class="column"> <img src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg"
 
           alt="Mountains" style="width:100%">
         <center>Featured image3</center>
