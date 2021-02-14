@@ -72,3 +72,30 @@ li.dropdown {
     padding: 16px 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.intro {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 450px;
+}
+
+.subbox {
+    display: block;
+    float: right;
+    padding: 20px 50px ;
+    background-color: #8fc1e3;
+    margin-top: 100px;
+    margin-right: 10%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #687864;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
