@@ -100,19 +100,22 @@ li.dropdown {
     float: left;
     align-content: center;
     background: rgba(101, 157, 189, 0.7);
+    
 
 }
 
 .main.content{
-    width: 75%;
+    width: 65%;
+    display: table;
     
 
 }
 .main.subscription{
     width: 25%;
+    display: table;
 }
 
-/* Clear Flots after columns very important!!!*/
+/* Clear Floats after columns very important!!!*/
 .row:after {
     content: "";
     display: table;
