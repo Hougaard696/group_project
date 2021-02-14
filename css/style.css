@@ -30,20 +30,23 @@ body {
 a:link, a:visited, ul {
   text-decoration: none;
   list-style-type: none;
-  color: var(--white-color);
+  color: black;
 }
 
 img {
   width: 100%;
 }
 
-.bg {
+.bg-image {
   /* linear-gradient(#30343ab7, #30343ab7)  original color*/
   background-image: linear-gradient(#54586180, #54586180), url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vw;
 }
 
+.bg-clear {
+  background-color: #EEF2F7;
+}
 
 /* Utilities */
 /* ////////////////// */
@@ -76,7 +79,7 @@ img {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(20px, auto);
+  /* grid-template-rows: minmax(20px, auto); */
   align-items: center;
   justify-items: center;
 }
@@ -90,7 +93,6 @@ img {
   margin: 5px;
   padding: 10px;
 }
-
 .footer {
   grid-column: 1 / 13;
   height: 53px;
@@ -126,24 +128,11 @@ img {
 .cat {
  grid-column: 1 / 13;
 }
-
-.cat-forest {
+.cat-vert {
   grid-column: 1 / 5;
+  grid-row: 3 / 6;
 }
-
-.cat-beach {
-  grid-column: 5 / 13;
-}
-
-.cat-travel {
-  grid-column: 5 / 8;
-}
-
-.cat-macro {
-  grid-column: 8 / 13;
-}
-
-.cat-wildlife {
+.cat-horz {
   grid-column: 5 / 13;
 }
 
@@ -151,8 +140,8 @@ img {
 /* ////////////////// */
 
 .nav-bar {
- display: flex;
-}
+  display: flex;
+ }
 
 .nav-bar a {
   padding: .3rem 2.5rem .3rem 2.5rem;
@@ -160,6 +149,9 @@ img {
   font-size: 1.9rem;
 }
 
+.nav-bar-home, a:link, a:visited, a:active ul {
+ color: var(--white);
+}
 /* Hero Left */
 /* ////////////////// */
 
@@ -204,8 +196,44 @@ img {
   border-style: none;
 }
 
+/* Gallery Page */
+/* ////////////////// */
+
+.figcap-space {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.img-shadows {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
 /* Images */
 /* ////////////////// */
 
+.cat-img-horz {
+  width: 35rem;
+  height: 16rem;
+}
+
+.cat-img-vert {
+  width: 50rem;
+  height: 65rem;
+}
+
+.move-vert {
+  position: relative;
+  left: 25rem;
+}
+.move-horz {
+  position: relative;
+  left: 3rem;
+}
 
 
