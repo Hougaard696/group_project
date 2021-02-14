@@ -1,3 +1,10 @@
+body {
+    background-image: url(images/water/ANN_5154.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 .navbar {
     display: inline-block;
     background-color:#31708E;
@@ -87,6 +94,19 @@ li.dropdown {
     background-color: #8fc1e3;
     margin-top: 100px;
     margin-right: 10%;
+}
+
+.feat {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.feat_imgs {
+    text-align: center;
+}
+
+.feat_imgs img {
+    padding: 50px 70px;
 }
 
 footer {
