@@ -1,242 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Photo Gallery</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nature Gallery</title>
+    <meta name="description" content="Gallery of nature photos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #31708E;
-  font-family: Arial; 
-   border-radius: 10px; 
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
 
-/*top nav text color*/
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: #F7F9FB;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #F7F9FB;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0; 
-}
-
-/*top nav Hover color*/
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #5085A5;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #F7F9FB;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; 
-  border-radius: 10px; 
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a overlay to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #DDD;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/*Featured Image layout*/
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 2px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* Border/dropshadow on Subscribe form */
-form {
-  box-shadow: 0px 8px 8px -8px #999;
-}
-/* Containers that hold top boxes side by side */
-.container {
-  padding: 20px;
-  background-color: #F7F9FB;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-/* Subscribe text button Style */
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Subscribe  button Style */
-input[type=submit] {
-  background-color: #697864;
-  color: #F7F9FB;
-  border: none;
-  border-radius: 5px;
-}
-/* Subscribe  button on hover opacity */
-input[type=submit]:hover {
-  opacity: 0.8;
-}     
-/* Side by side section*/   
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  display: flex;
-}
-
-/* Create two equal columns that sit next to each other */
-.column {
-  flex: 50%;
-  padding: 10px;
-   flex-wrap: nowrap | wrap | wrap-reverse;
-  
-}
-/* background color holding everything in */
-.mainbody {
-  background-color: #f8f8ff;
-  padding: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; 
-  border-radius: 5px; 
-}
-
-/* Footer */
-.footer {
-  padding: 2px
-  text-align: center;
-  background-color: #31708E;
-  border-radius: 5px;
-  color: #F7F9FB;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
-
-}
-      
-/*Body Background color*/
-.body {
-  font-family: Arial, Helvetica, sans-serif;
-    background-color: #F7F9FB
-}
-body{
-  height: 100vh;
-  text-align: center;
-}
-
-</style> </head>
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
-    <div class="header">
-      <div class="navbar"> <a href="index.html">Home</a>
-        <div href="gallery.html" class="dropdown">
-          <div class="dropbtn">Gallery </div>
-          <div class="dropdown-content" id="myDropdown"> <a href="landscape.html">landscape</a>
-            <a href="water.html">Water</a> <a href="wildlife.html">Wildlife</a>
-            <a href="Macro.html">Macro</a> </div>
-        </div>
-        <a href="about.html">About us</a> <a href="contact.html">Contact</a> <a
-
-          href="admin.html" style="float:right">Admin</a> </div>
-    </div>
-    
-    <div class="content">
-      <div class="row">
-        <div class="column">
-          <div class="container">
-            <h2>Welcome to our gallery</h2>
-            <p>Feel free to browse our curated image gallery or contact us!</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-        </div>
-        <div class="column">
-          <form action="#">
-            <div class="container">
-              <h2>Subscribe Now!</h2>
-              <p>Subscribe today in order to get our monthly news letter with
-                the newest photo's</p>
+    <header>
+      <div class="nav">
+        <div class="nav-container">
+          <nav class="logo"> <a href="index.html">
+              <h2>NATURE GALLERY</h2>
+            </a> </nav>
+          <nav> <a href="index.html">HOME</a> </nav>
+          <nav> <a href="#" class="dropdown-text">GALLERY</a>
+            <div class="dropdown-button">
+              <div class="dropdown-content"> <a href="#">LANDSCAPE</a> <a href="#">WATER</a>
+                <a href="#">MACRO</a> <a href="#">WILDLIFE</a> </div>
             </div>
-            <div class="container"> <input placeholder="Email address" name="mail"
-
-                required="" type="text"> </div>
-            <div class="container"> <input value="Subscribe" type="submit"> </div>
-          </form>
+          </nav>
+          <nav> <a href="#">ABOUT US</a> </nav>
+          <nav> <a href="#">CONTACT US</a> </nav>
+          <nav> <a href="#">ADMIN</a> </nav>
         </div>
       </div>
-      <br>
-      <br>
-      <div class="row">
-        <div class="column"> <img src="images/featured/1.jpg" alt="featured 1"
+    </header>
+    <div class="background-overlay">
+      <div class="heading-background">
+        <div class="body-container">
+          <div>
+            <form action="#"> <label for="fname">First Name</label> <input id="fname"
 
-            style="width:100%" height="100%"> </div>
-        <div class="column"> <img src="images/featured/2.jpg" alt="featured 2"
+                name="firstname" placeholder="Your name.." type="text"> <label
 
-            style="width:100%" height="100%"> </div>
-        <div class="column"> <img src="images/featured/3.jpg" alt="featured 3"
+                for="lname">Last Name</label> <input id="lname" name="lastname"
 
-            style="width:100%" height="100%"> </div>
+                placeholder="Your last name.." type="text"> <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <input value="Submit" type="submit"> </form>
+          </div>
+          <div class="newsletter-container"> </div>
+        </div>
       </div>
     </div>
-    <div class="footer">
-      <center>
-        <p> Copyright © Group Project FS1000 Group 1 </p>
-      </center>
-    </div>
+    <div class="sidenav"> <a href="#about">Edit/Remove Picture</a> <a href="#services">Add/Remove
+        Category</a> <a href="#clients">Edit/Remove User</a> <a href="#contact">Add
+        Picture</a> <a href="#contact">Add user</a> </div>
+    <footer>
+      <div class="footer">
+        <p class="footer-text">Copyright</p>
+      </div>
+    </footer>
+    <script>
+//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
   </body>
 </html>
