@@ -1,58 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Gateway - Homepage</title>
-    <link rel="stylesheet" href="Stylesheet.css">
-</head>
-<body>
-    <header class="navbar">
-        <h3>Nature Gateway</h3>
-        <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="Gallery.html" class="dropbtn">Gallery</a>
+    <title>Nature Gallery</title>
+    <meta name="description" content="Gallery of nature photos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-container">
+          <nav class="logo">
+            <a href="index.html"><h2>NATURE GALLERY</h2></a>
+          </nav>
+          <nav>
+            <a href="index.html">HOME</a>
+          </nav>
+          <nav>
+              <a href="#" class="dropdown-text">GALLERY</a>
+              <div class="dropdown-button">
                 <div class="dropdown-content">
-                    <a href="#">Featured</a>
-                    <a href="#">Water</a>
-                    <a href="#">Landscape</a>
-                    <a href="#">Wildlife</a>
-                    <a href="#">Macro</a>
+                  <a href="#">LANDSCAPE</a>
+                  <a href="#">WATER</a>
+                  <a href="#">MACRO</a>
+                  <a href="#">WILDLIFE</a>
                 </div>
-            </li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-        <a href="Admin.html" class="admintext">Admin</a>
-    </header>
-    <div class="intro">
-        <h1>Looking through nature's lens</h1>
-        <p>
-            Explore the world through a lens and perspective that captures natures beauty in all shapes and forms.
-            Receive monthly exclusive photo packages and notifications by subscribing now.
-        </p>
-    </div>
-    <div class="subbox">
-        <h2>Subscribe Now</h2>
-        <form>
-            <input type="text" placeholder="Enter Email Address"><br>
-            <input type="submit" value="Subscribe">
-        </form>
-    </div>
-    <div class="feat">
-        <h1>Featured Images</h1>
-    </div>
-    <div class="feat_imgs">
-        <img src="images/wildlife/_ANN0579.jpg" alt="" width="400px">
-
-        <img src="images/landscape/ANN_5090.jpg" alt="" width="400px">
-
-        <img src="images/macro/_ANN5741.jpg" alt="" width="400px">
-    </div>
+              </div>
+            </nav>
+          <nav>
+            <a href="#">ABOUT US</a>
+          </nav>
+          <nav>
+            <a href="#">CONTACT US</a>
+          </nav>
+          <nav>
+            <a href="#">ADMIN</a>
+          </nav>
+        </div>
+      </div>
+      </header>
+      <body>
+        <div class="background-overlay">
+          <div class="heading-background">
+            <div class="body-container">
+               <div class="heading-container">
+                <h1>Welcome</h1>
+                <p class="heading-copy">I'm baby deep v pug gochujang, seitan mlkshk raclette hashtag 90's truffaut. Vice sartorial chillwave ramps artisan
+                  sustainable polaroid chartreuse salvia knausgaard glossier bicycle rights.</p>
+                </div>
+                <div class="newsletter-container">
+                  <h3>
+                    Never miss a photo.
+                  </h3>
+                  <h4 class="newsletter-copy">
+                    Sign up for our newsletter. No spam, we promise. Just great photos.
+                  </h4>
+                  <form>
+                    <input class="input" type="email" id="myemail" placeholder="Email" required>
+                    <input class="button" type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+          </div>
+      </div>
+    </body>
     <footer>
-        <p>Copyright</p>
+      <div class="footer">
+        <p class="footer-text">Copyright</p>
+      </div>
     </footer>
-</body>
+    <script src="" async defer></script>
+  </body>
 </html>
