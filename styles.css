@@ -186,7 +186,7 @@ input {
 }
 
 
-/* Fixed sidenav, full height */
+/*sidenav */
 .sidenav {
   height: 100%;
   width: 230px;
@@ -199,12 +199,12 @@ input {
   padding-top: 20px;
 }
 
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+/* Style of sidenav links */
+.sidenav a{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #f1f1f1;
+  color: #F1f1f1;
   display: block;
   border: none;
   background: none;
@@ -216,7 +216,7 @@ input {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #252625;
+  color: #C4C4C4;
 }
 
 /* Main content */
@@ -226,20 +226,7 @@ input {
   padding: 0px 10px;
 }
 
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #697865;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
+/* Text  field on form */
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -248,9 +235,10 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+
 }
 
-/* Optional: Style the caret down icon */
+/* Email  field on form */
 input[type=email], select {
   width: 100%;
   padding: 12px 20px;
@@ -261,7 +249,7 @@ input[type=email], select {
   box-sizing: border-box;
 }
 
-/* Optional: Style the caret down icon */
+/* Password field on form */
 input[type=password], select {
   width: 100%;
   padding: 12px 20px;
@@ -272,6 +260,7 @@ input[type=password], select {
   box-sizing: border-box;
 }
 
+/* Submit button on form */
 input[type=submit] {
   width: 100%;
   background-color: #697865;
@@ -283,6 +272,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
+/*  button on hover color*/
 input[type=submit]:hover {
   background-color: #82927e;
 }
