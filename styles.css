@@ -4,9 +4,10 @@ body {
 
 h1 {
   font-family: Yeseva One, serif;
-  font-size: 7rem;
+  font-size: 6rem;
   color: #F8F9FB;
   margin: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -184,4 +185,3 @@ input {
   top: 30%;
   font-size: 0.75rem;
 }
-
