@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
 }
@@ -62,10 +66,14 @@ input {
 }
 
 .nav {
-  position: sticky;
+  
+  position: fixed;
+  top: 0;
+  width: 100vw;
   background-color: #697865;
   height: 65px;
   box-shadow: 0px 75px 80px rgba(0, 0, 0, 0.13), 0px 31.3332px 33.4221px rgba(0, 0, 0, 0.0934511), 0px 16.7522px 17.869px rgba(0, 0, 0, 0.0774939), 0px 9.39116px 10.0172px rgba(0, 0, 0, 0.065), 0px 4.98758px 5.32008px rgba(0, 0, 0, 0.0525061), 0px 2.07544px 2.21381px rgba(0, 0, 0, 0.0365489);
+  z-index: 5;
 }
 
 .nav-container {
@@ -172,10 +180,9 @@ input {
 }
 
 .footer {
+  bottom: 0;
   width: 100vw;
   background-color: #595959;
-  position: absolute;
-  bottom: 0;
   text-align: center;
   height: 40px;
 }
@@ -184,4 +191,91 @@ input {
   position: relative;
   top: 30%;
   font-size: 0.75rem;
+}
+
+.gallery-container {
+  padding-top: 130px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+}
+
+.subheading {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.no-image-background {
+  background: rgba(29, 27, 27, 0.9);
+  width: 100vw;
+  z-index: -1;
+}
+
+.paper {
+  padding: 0 0 50px 0;
+  margin: auto;
+  width: 80%;
+  top: 0;
+  z-index: -1;
+  background: rgba(74, 74, 74, 0.81);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.42), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.301919), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.250365), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.21), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.169635), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.118081);
+}
+
+.vertical-gallery-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+.landscape {
+  background-image: url("images/landscape/ANN_5649.jpg");
+  background-color: #cccccc;
+  background-position: 50% 20%;
+  background-size: 1024px 682px;
+  width: 100%;
+  height: 333px;
+  margin: 20px 0 10px 0;
+  color: #1D1B1B;
+  }
+
+.landscape:hover {
+  transition: all 1s ease;
+  opacity: 0.7;
+}
+
+.water {
+  background-image: url("images/landscape/ANN_5649.jpg");
+  background-color: #cccccc;
+  background-position: 50% 20%;
+  background-size: 1024px 682px;
+  height: 300px;
+}
+
+.wildlife {
+  background-image: url("images/landscape/ANN_5649.jpg");
+  background-color: #cccccc;
+  background-position: 50% 20%;
+  background-size: 1024px 682px;
+  width: 100%;
+  height: 300px;
+  margin: 0 0 10px 0;
+}
+
+.macro {
+  background-image: url("images/landscape/ANN_5649.jpg");
+  background-color: #cccccc;
+  background-position: 50% 20%;
+  background-size: 1024px 682px;
+  height: 610px;
+  margin: 0 0 0 10px;
+  flex-grow: 1;
+}
+
+.gallery-text {
+  position: absolute;
+  bottom: 0;
 }
