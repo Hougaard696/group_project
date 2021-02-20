@@ -194,7 +194,6 @@ input {
 }
 
 .gallery-container {
-  padding-top: 130px;
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
@@ -203,7 +202,8 @@ input {
 }
 
 .subheading {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 5rem;
   font-weight: 400;
 }
 
@@ -211,10 +211,11 @@ input {
   background: rgba(29, 27, 27, 0.9);
   width: 100vw;
   z-index: -1;
+  flex-grow: 2;
 }
 
 .paper {
-  padding: 0 0 50px 0;
+  padding: 130px 0 50px 0;
   margin: auto;
   width: 80%;
   top: 0;
@@ -224,58 +225,78 @@ input {
 }
 
 .vertical-gallery-container {
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  flex-grow: 1;
+  width: 50%;
+  position: relative;
 }
 
-.landscape {
-  background-image: url("images/landscape/ANN_5649.jpg");
-  background-color: #cccccc;
-  background-position: 50% 20%;
-  background-size: 1024px 682px;
+.scale-img {
+  height: 100%;
   width: 100%;
-  height: 333px;
-  margin: 20px 0 10px 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.full-width {
+  width: 100%;
+  height: 500px;
+  margin: 5px 0 5px 0;
   color: #1D1B1B;
+  position: relative;
   }
 
-.landscape:hover {
-  transition: all 1s ease;
-  opacity: 0.7;
-}
-
-.water {
-  background-image: url("images/landscape/ANN_5649.jpg");
-  background-color: #cccccc;
-  background-position: 50% 20%;
-  background-size: 1024px 682px;
+.small-top-left {
   height: 300px;
+  margin: 0 5px 5px 0;
+  position: relative;
 }
 
-.wildlife {
-  background-image: url("images/landscape/ANN_5649.jpg");
-  background-color: #cccccc;
-  background-position: 50% 20%;
-  background-size: 1024px 682px;
-  width: 100%;
+.small-top-right {
   height: 300px;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 5px;
+  position: relative;
 }
 
-.macro {
-  background-image: url("images/landscape/ANN_5649.jpg");
-  background-color: #cccccc;
-  background-position: 50% 20%;
-  background-size: 1024px 682px;
-  height: 610px;
-  margin: 0 0 0 10px;
+.small-bottom-left {
+  height: 300px;
+  margin: 0 5px 0 0;
+  position: relative;
+}
+
+.small-bottom-right {
+  height: 300px;
+  margin: 0 0 0 5px;
+  position: relative;
+}
+
+.tall {
+  height: 605px;
+  width: 50%;
   flex-grow: 1;
+  position: relative;
 }
 
-.gallery-text {
+.gallery-gradient {
+  opacity: 0;
+  vertical-align: text-bottom;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #1B1B1B 100%);
+}
+
+.gallery-gradient:hover {
+  opacity: 100%;
+  transition: all 1s ease;
+}
+
+.gallery-gradient > a {
+  margin: 0 0 0 10px;
+  opacity: 80%;
+  font-size: 3rem;
   position: absolute;
   bottom: 0;
 }
