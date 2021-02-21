@@ -61,10 +61,13 @@ body {
   }
   
   .nav {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: #697865;
     height: 65px;
     box-shadow: 0px 75px 80px rgba(0, 0, 0, 0.13), 0px 31.3332px 33.4221px rgba(0, 0, 0, 0.0934511), 0px 16.7522px 17.869px rgba(0, 0, 0, 0.0774939), 0px 9.39116px 10.0172px rgba(0, 0, 0, 0.065), 0px 4.98758px 5.32008px rgba(0, 0, 0, 0.0525061), 0px 2.07544px 2.21381px rgba(0, 0, 0, 0.0365489);
+    z-index: 5;
   }
   
   .nav-container {
@@ -173,7 +176,6 @@ body {
   .footer {
     width: 100%;
     background-color: #595959;
-    position: absolute;
     bottom: 0;
     text-align: center;
     height: 40px;
@@ -187,10 +189,12 @@ body {
   
   .profile-container {
     text-align: center;
-    position: absolute;
-    top: 525px;
     margin: 0% 10%;
     padding-bottom: 150px;
+  }
+
+  .profile-container h2{
+    padding: 50px 0;
   }
   
   .profile-box {
@@ -199,15 +203,18 @@ body {
     padding: 20px 50px;
   }
   
-  .aboutbody {
-    background-color: rgba(67, 67, 67, 0.81);
+  .aboutbackground {
+    background-color: rgba(44, 44, 44, 0.616);
   }
   
-  .aboutheading-background {
+  .aboutheading-container {
+    margin-top: 65px;
     width: 100%;
     background-color: rgba(67, 67, 67, 0.81);
-    position: absolute;
-    padding: 75px 0;
-    top: 110px;
+    padding: 50px 0;
     z-index: -1;
+  }
+
+  .aboutheading {
+    margin: 0 250px;
   }
