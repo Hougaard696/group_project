@@ -1,0 +1,139 @@
+body {
+    background-image: url(_ANN0554.jpg); 
+background-size: cover;
+font-family: Arial;
+margin: auto;
+color: white;
+min-height: 100vh;
+
+}
+header{
+    position:sticky ;
+    top: 0;
+}
+
+.dropdown {
+    
+    height: 10vh;
+    width: 100%;
+    background-image: url(ANN_5387.jpg);
+    background-size: cover; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.gallery-button {
+    position: relative;
+}
+
+.gallery-button ul{
+    position: absolute;
+    background-color: rgb(181, 223, 226);
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    
+}
+
+.gallery-button a{
+    color: white; 
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+text-decoration: none;
+}
+
+.dropdown button {
+    background-color: rgb(181, 223, 226);
+    border-radius: 5px;
+    padding:7px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    color: rgb(65, 212, 223);
+
+} 
+
+.gallery-button li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-button li:hover{
+    background-color: rgb(65, 212, 223);
+}
+
+.gallery-button button:focus + ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+footer {
+    background-image: url(ANN_5387.jpg.);
+    background-size: cover;
+    color: white; 
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+bottom: 0;
+position: fixed;
+    display: flex;
+    width: 100%;
+    height: 5%;
+   align-items: center;
+    justify-content: space-evenly;
+}
+
+.firstcontent {
+    position: ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around  ;
+}
+
+.first-content p, .first-content form{
+   
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+
+.featured-images {
+    
+    margin:auto;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.featured-images img{
+    width:27%; 
+    height: auto;
+    padding:12px;
+   /* display: flex;
+    object-fit: contain;*/
+}
