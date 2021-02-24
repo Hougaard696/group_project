@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Nature Gallery</title>
+  <title>Nature Gallery | Landscape</title>
   <meta name="description" content="Gallery of nature photos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,46 +16,45 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Yeseva+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="galleryScript.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="nav">
-      <div class="nav-container">
-        <nav class="logo">
-          <a href="index.html">
-            <h2>NATURE GALLERY</h2>
-          </a>
-        </nav>
-        <nav>
-          <a href="index.html">HOME</a>
-        </nav>
-        <nav>
-          <a href="gallery.html" class="dropdown-text">GALLERY</a>
-          <div class="dropdown-button">
-            <div class="dropdown-content">
-              <a href="landscape.html">LANDSCAPE</a>
-              <a href="water.html">WATER</a>
-              <a href="macro.html">MACRO</a>
-              <a href="wildlife.html">WILDLIFE</a>
+    <header>
+      <div class="nav">
+        <div class="nav-container">
+          <nav class="logo">
+            <a href="index.html">
+              <h2 class="logo-text">NATURE GALLERY</h2>
+            </a>
+          </nav>
+          <nav>
+            <a href="index.html">HOME</a>
+          </nav>
+          <nav>
+            <a href="gallery.html" class="dropdown-text">GALLERY</a>
+            <div class="dropdown-button">
+              <div class="dropdown-content">
+                <a href="landscape.html">LANDSCAPE</a>
+                <a href="water.html">WATER</a>
+                <a href="macro.html">MACRO</a>
+                <a href="wildlife.html">WILDLIFE</a>
+              </div>
             </div>
-          </div>
-        </nav>
-        <nav>
-          <a href="#">ABOUT US</a>
-        </nav>
-        <nav>
-          <a href="#">CONTACT US</a>
-        </nav>
-        <nav>
-          <a href="#">ADMIN</a>
-        </nav>
+          </nav>
+          <nav>
+            <a href="aboutUs.html">ABOUT US</a>
+          </nav>
+          <nav>
+            <a href="contactUs.html">CONTACT US</a>
+          </nav>
+          <nav>
+            <a href="admin.html">ADMIN</a>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
   <section>
-    <div class="no-image-background">
+    <div class="background">
 
         <div class="paper">
           <h2 class="subheading">LANDSCAPE</h2>
@@ -99,9 +98,10 @@
     </section>
     <footer>
       <div class="footer">
-        <p class="footer-text">Copyright</p>
+        <p class="footer-text" id="copyright"></p>
       </div>
     </footer>
+    <script src="./js/date.js"></script>
+    <script src="./js/galleryScript.js"></script>
   </body>
-  
   </html>
