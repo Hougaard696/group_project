@@ -23,4 +23,3 @@ function changeImg (){
 }
 
 window.onload = changeImg;
-
