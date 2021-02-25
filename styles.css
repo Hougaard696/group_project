@@ -92,6 +92,10 @@ label {
   color: #F8F9FB;
 }
 
+button {
+  border: none;
+}
+
 .nav {
   position: fixed;
   top: 0;
