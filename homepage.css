@@ -1,0 +1,138 @@
+/* Fonts */
+@font-face {
+    font-family: "titleFont";
+    src: url("Font/Tangerine/Tangerine-Regular.ttf");
+}
+
+@font-face {
+    font-family: "headerFonts";
+    src: url("Font/Cormorant_Garamond/CormorantGaramond-Bold.ttf");
+
+}
+
+/* Title Code */
+.title {
+    font-family: "titleFont";
+    text-align: center;
+    font-size: 5vw;
+    padding: 0;
+    margin: 5px;
+}
+
+/* background for now */
+body {
+    background: url(images/background/ANN_6219.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/* Remove Underline from links */
+a {
+    text-decoration: none;
+}
+
+
+/* Nav bar */
+ul {
+    display: inline-block;
+    background: rgba(101, 157, 189, 0.3);
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+}
+li {
+    display: inline;
+
+}
+
+li a {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "headerFonts";
+}
+
+li a:hover {
+    background-color:#72b0d4;
+}
+
+/* Dropdown */
+li a .dropbutton{
+    display: inline-block;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "headerFonts";
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(101, 157, 189, 0.3);
+    min-width: 25px;
+    box-shadow:0px 5px 5px 0px rgba(101, 157, 189, 0.3);
+    padding: 5px 5px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 5px 5px;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fropdown-content a:hover {
+    background-color:#72b0d4;
+}
+
+/* Main Content & Subscription box */
+.main {
+    float: left;
+    align-content: center;
+    background: rgba(101, 157, 189, 0.7);
+    
+
+}
+
+.main.content{
+    width: 65%;
+    display: table;
+    
+
+}
+.main.subscription{
+    width: 25%;
+    display: table;
+}
+
+/* Clear Floats after columns very important!!!*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Featured Content */
+.column {
+    float: left;
+    width: 33.33%;
+    align-content: center;
+    background: rgba(101, 157, 189, 0.7);
+}
+
+img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+}
