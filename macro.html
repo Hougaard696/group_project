@@ -23,24 +23,22 @@
       <div class="nav">
         <div class="nav-container">
           <nav class="logo">
-            <a href="index.html">
-              <h2 class="logo-text">NATURE GALLERY</h2>
-            </a>
+            <a href="index.html"><h2 class="logo-text">NATURE GALLERY</h2></a>
           </nav>
           <nav>
             <a href="index.html">HOME</a>
           </nav>
           <nav>
-            <a href="gallery.html" class="dropdown-text">GALLERY</a>
-            <div class="dropdown-button">
-              <div class="dropdown-content">
-                <a href="landscape.html">LANDSCAPE</a>
-                <a href="water.html">WATER</a>
-                <a href="macro.html">MACRO</a>
-                <a href="wildlife.html">WILDLIFE</a>
+              <a href="gallery.html" class="dropdown-text">GALLERY</a>
+              <div class="dropdown-button">
+                <div class="dropdown-content">
+                  <a href="landscape.html">LANDSCAPE</a>
+                  <a href="water.html">WATER</a>
+                  <a href="macro.html">MACRO</a>
+                  <a href="wildlife.html">WILDLIFE</a>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
           <nav>
             <a href="aboutUs.html">ABOUT US</a>
           </nav>
@@ -50,9 +48,25 @@
           <nav>
             <a href="adminAddPicture.html">ADMIN</a>
           </nav>
+           <nav>
+            <button class="nav-container nav" onclick="openForm()">Login</button>
+              <div class="loginOverlay" id="loginForm">
+                <form class="formContent" name="loginInfo" id="login" >
+                <h2>Login</h2>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw"required>
+          
+                <button type="submit" class="btn" value="Submit" onsubmit="validateForm()">Submit</button>
+                <button class="btn cancel" onclick="closeForm()">Cancel</button>
+                  </form>  
+              </div>
+          </nav>
         </div>
       </div>
-    </header>
+      </header>
   <section>
     <div class="background">
       <div class="paper">
@@ -102,5 +116,6 @@
   </footer>
   <script src="./js/date.js"></script>
   <script src="./js/galleryScript.js"></script>
+  <script src="./js/loginpopup.js"></script>
 </body>
 </html>

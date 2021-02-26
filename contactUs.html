@@ -45,6 +45,22 @@
           <nav>
             <a href="adminAddPicture.html">ADMIN</a>
           </nav>
+           <nav>
+            <button class="nav-container nav" onclick="openForm()">Login</button>
+              <div class="loginOverlay" id="loginForm">
+                <form class="formContent" name="loginInfo" id="login" >
+                <h2>Login</h2>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw"required>
+          
+                <button type="submit" class="btn" value="Submit" onsubmit="validateForm()">Submit</button>
+                <button class="btn cancel" onclick="closeForm()">Cancel</button>
+                  </form>  
+              </div>
+          </nav>
         </div>
       </div>
       </header>
@@ -86,5 +102,6 @@
       </div>
     </footer>
     <script src="./js/date.js"></script>
+    <script src="./js/loginpopup.js"></script>
   </body>
 </html>
