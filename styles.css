@@ -530,3 +530,7 @@ button {
   margin-bottom:10px;
   opacity: 0.8;
 }
+
+.formContent > label {
+  color: black;
+}

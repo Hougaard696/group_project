@@ -8,12 +8,13 @@ function openForm() {
   
   function validateForm() {
     
-   let userName = document.forms["loginInfo"]["email"].value;
-   let pwd = document.forms["loginInfo"]["psw"].value;
-   if (userName=="xxx@email.com" && pwd=="password") {
-     alert('you did it')
+   let userName = document.getElementById("username").value;
+   let pwd = document.getElementById("psw").value;
+
+   if (userName=="Ultimate" && pwd=="password") {
+     alert('Welcome to the Madness')
       }
     else {
-    alert('Invalid Email or Password')
+    alert('Did you honestly think that would word!!')
    }
   }
