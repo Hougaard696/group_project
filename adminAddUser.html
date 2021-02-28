@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nature Gallery | Add User</title>
+    <meta name="description" content="Gallery of nature photos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-container">
+          <nav class="logo"> <a href="index.html">
+              <h2 class="logo-text">NATURE GALLERY</h2>
+            </a> </nav>
+          <nav> <a href="index.html">HOME</a> </nav>
+          <nav> <a href="gallery.html" class="dropdown-text">GALLERY</a>
+            <div class="dropdown-button">
+              <div class="dropdown-content"> <a href="landscape.html">LANDSCAPE</a>
+                <a href="water.html">WATER</a> <a href="macro.html">MACRO</a> <a
+
+                  href="wildlife.html">WILDLIFE</a> </div>
+            </div>
+          </nav>
+          <nav> <a href="aboutUs.html">ABOUT US</a> </nav>
+          <nav> <a href="contactUs.html">CONTACT US</a> </nav>
+          <nav> <a href="adminAddPicture.html">ADMIN</a> </nav>
+          
+        </div>
+      </div>
+    </header>
+    <div class="background">
+      <div class="sidenav">
+        <div class="sidenav-container">
+          <nav><a href="adminRemovePicture.html">Edit/Remove Picture</a></nav>
+          <hr>
+          <nav><a href="adminRemoveUser.html">Edit/Remove User</a></nav>
+          <hr> <a href="adminCategory.html">Add/Remove Category</a>
+          <hr> <a href="adminAddPicture.html">Add Picture</a>
+          <hr> <a href="adminAddUser.html">Add User</a> </div>
+      </div>
+      <section class="side">
+        <div class="paper">
+          <div class="admin-contianer">
+            <form class="side-form"> <label>User name<br>
+                <input class="input" name="User name" required="" placeholder="User name"
+
+                  type="text"></label> <br>
+              <label>Enter email<br>
+                <input class="input" required="" placeholder="email@site.com" type="email"></label>
+              <br>
+              <label>Password<br>
+                <input class="input" id="passwordID" name="password" type="password"></label>
+              <br>
+              <label>Password Confirm<br>
+                <input class="input" id="passwordConfirm" name="passwordConfirm"
+
+                  type="password"></label> <br>
+              <input class="button" value="Submit" type="submit"> <input class="reset-button"
+
+value="Reset" type="reset"> </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">
+        <p class="footer-text" id="copyright">Copyright</p>
+      </div>
+    </footer>
+    <script src="./js/date.js"></script>
+    <script src="./js/loginpopup.js"></script>
+  </body>
+</html>

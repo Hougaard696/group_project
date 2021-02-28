@@ -21,7 +21,7 @@
       <div class="nav">
         <div class="nav-container">
           <nav class="logo">
-            <a href="index.html"><h2>NATURE GALLERY</h2></a>
+            <a href="index.html"><h2 class="logo-text">NATURE GALLERY</h2></a>
           </nav>
           <nav>
             <a href="index.html">HOME</a>
@@ -38,26 +38,29 @@
               </div>
             </nav>
           <nav>
-            <a href="#">ABOUT US</a>
+            <a href="aboutUs.html">ABOUT US</a>
           </nav>
           <nav>
-            <a href="#">CONTACT US</a>
+            <a href="contactUs.html">CONTACT US</a>
           </nav>
-          <nav>
-            <a href="#">ADMIN</a>
+          <!-- <nav>
+            <a href="adminAddPicture.html">ADMIN</a>
+          </nav> -->
+           <nav>
+            <button onclick="openForm()">LOGIN</button>
+              <div class="loginOverlay" id="loginForm"></div>
           </nav>
         </div>
       </div>
       </header>
-      <body>
-        <div class="background-overlay">
+      <section>
+        <div class="background">
           <div class="heading-background">
             <div class="body-container">
-               <div class="heading-container">
+              <div>
                 <h1>Welcome</h1>
-                <p class="heading-copy">I'm baby deep v pug gochujang, seitan mlkshk raclette hashtag 90's truffaut. Vice sartorial chillwave ramps artisan
-                  sustainable polaroid chartreuse salvia knausgaard glossier bicycle rights.</p>
-                </div>
+                <p class="heading-copy">This is a curated gallery of nature photos from a team of nature lovers. We are passionate about the enviroment and hope that these photos will make you fall in love with nature too. Have a look around and enjoy.</p>
+              </div>
                 <div class="newsletter-container">
                   <h3>
                     Never miss a photo.
@@ -71,14 +74,19 @@
                   </form>
                 </div>
               </div>
+            </div>
           </div>
-      </div>
-    </body>
-    <footer>
-      <div class="footer">
-        <p class="footer-text">Copyright</p>
-      </div>
-    </footer>
-    <script src="" async defer></script>
-  </body>
-</html>
+        </section>
+            <footer>
+              <div class="footer">
+                <p class="footer-text" id="copyright"></p>
+              </div>
+            </footer>
+          <div class="container">
+            <img name="slide" class="img">
+          </div>
+        <script src="./js/slideshowScript.js"></script>
+        <script src="./js/date.js"></script>
+        <script src="./js/loginpopup.js"></script>
+      </body>
+      </html>
