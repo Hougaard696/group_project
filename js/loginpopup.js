@@ -17,14 +17,18 @@ function openForm() {
   function closeForm() {
     document.getElementById("loginForm").style.display = "none";
   }
-  
+  function Redirect() {
+               window.location = "./adminRemovePicture.html";
+            }     
+ 
   function validateForm() {
     
    let userName = document.getElementById("username").value;
    let pwd = document.getElementById("psw").value;
 
    if (userName=="Ultimate" && pwd=="password") {
-     alert('Welcome to the Madness')
+	  document.write("Welcome to the madness");
+            setTimeout('Redirect()', 500);
       }
     else {
     alert('Did you honestly think that would work!!')
