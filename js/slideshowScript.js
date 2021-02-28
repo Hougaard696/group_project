@@ -5,9 +5,9 @@ var images = [];
 var time = 3000;
 
 ///Images List
-images[0] = '../images/macro.jpg';
-images[1] = '../images/wildlife.jpg';
-images[2] = '../images/fern.jpg';
+images[0] = './images/macro.jpg';
+images[1] = './images/wildlife.jpg';
+images[2] = './images/fern.jpg';
 
 ////Change Images
 
