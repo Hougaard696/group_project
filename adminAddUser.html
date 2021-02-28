@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nature Gallery | Remove User</title>
+    <title>Nature Gallery | Add User</title>
     <meta name="description" content="Gallery of nature photos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -48,28 +52,23 @@
       <section class="side">
         <div class="paper">
           <div class="admin-contianer">
-            <form class="side-form" action="#"> <label for="country">Select
-                User</label> <br>
-              <select class="input" id="Image" name="Image">
-                <option value="1">User 1</option>
-                <option value="2">User 2</option>
-                <option value="3">User 3</option>
-              </select>
-              <br>
-              <label for="username">Username</label> <br>
-              <input class="input" id="Username" name="Username" placeholder="Username"
+            <form class="side-form"> <label>User name<br>
+                <input class="input" name="User name" required="" placeholder="User name"
 
-                type="text"> <br>
-              <label for="email">Email</label> <br>
-              <input class="input" id="Email" name="Email" placeholder="Email" type="Email">
+                  type="text"></label> <br>
+              <label>Enter email<br>
+                <input class="input" required="" placeholder="email@site.com" type="email"></label>
               <br>
-              <label for="Password">Password</label> <br>
-              <input class="input" id="Password" name="Password" placeholder="Password"
+              <label>Password<br>
+                <input class="input" id="passwordID" name="password" type="password"></label>
+              <br>
+              <label>Password Confirm<br>
+                <input class="input" id="passwordConfirm" name="passwordConfirm"
 
-                type="Password"> <br>
+                  type="password"></label> <br>
               <input class="button" value="Submit" type="submit"> <input class="reset-button"
 
-value="Delete" type="submit"> </form>
+value="Reset" type="reset"> </form>
           </div>
         </div>
       </section>
