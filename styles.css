@@ -498,6 +498,7 @@ button {
 }
 
 .formContent {
+	 border-radius: 5px;
   position: fixed;
   height: auto;
   width: auto;
@@ -506,11 +507,12 @@ button {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #595959;
   padding: 10px;
 }
 .formContent h2  {
-  color: #000000;
+	font-family: Yeseva One, serif;
+  color: #FFF;
 }
 .formContent input[type=text], 
 .formContent input[type=password] {
@@ -519,13 +521,16 @@ button {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  background: #f1f1f1;
+  background: #FFF;
   box-sizing: border-box;
 }
 
 .formContent .btn {
-  background-color: #4CAF50;
-  color: white;
+	
+  font-family: Open Sans, sans-serif;
+  font-weight: 900;
+  background-color: #8FC1E2;
+  color: black;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -536,8 +541,11 @@ button {
 
 /* Add a red background color to the cancel button */
 .formContent .cancel {
-  background-color: red;
-  color: white;
+	
+  font-family: Open Sans, sans-serif;
+  font-weight: 900;
+  background-color: #8FC1E2;
+  color: black;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -547,5 +555,5 @@ button {
 }
 
 .formContent > label {
-  color: black;
+  color: white;
 }
