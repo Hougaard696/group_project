@@ -16,87 +16,66 @@
     <header>
       <div class="nav">
         <div class="nav-container">
-          <nav class="logo">
-            <a href="index.html"><h2 class="logo-text">NATURE GALLERY</h2></a>
+          <nav class="logo"> <a href="index.html">
+              <h2 class="logo-text">NATURE GALLERY</h2>
+            </a> </nav>
+          <nav> <a href="index.html">HOME</a> </nav>
+          <nav> <a href="gallery.html" class="dropdown-text">GALLERY</a>
+            <div class="dropdown-button">
+              <div class="dropdown-content"> <a href="landscape.html">LANDSCAPE</a>
+                <a href="water.html">WATER</a> <a href="macro.html">MACRO</a> <a
+
+                  href="wildlife.html">WILDLIFE</a> </div>
+            </div>
           </nav>
-          <nav>
-            <a href="index.html">HOME</a>
-          </nav>
-          <nav>
-              <a href="gallery.html" class="dropdown-text">GALLERY</a>
-              <div class="dropdown-button">
-                <div class="dropdown-content">
-                  <a href="landscape.html">LANDSCAPE</a>
-                  <a href="water.html">WATER</a>
-                  <a href="macro.html">MACRO</a>
-                  <a href="wildlife.html">WILDLIFE</a>
-                </div>
-              </div>
-            </nav>
-          <nav>
-            <a href="aboutUs.html">ABOUT US</a>
-          </nav>
-          <nav>
-            <a href="contactUs.html">CONTACT US</a>
-          </nav>
-          <nav>
-            <a href="adminAddPicture.html">ADMIN</a>
-          </nav>
-           <nav>
-            <button class="nav-container nav" onclick="openForm()">Login</button>
-              <div class="loginOverlay" id="loginForm"></div>
-          </nav>
+          <nav> <a href="aboutUs.html">ABOUT US</a> </nav>
+          <nav> <a href="contactUs.html">CONTACT US</a> </nav>
+          <nav> <a href="adminAddPicture.html">ADMIN</a> </nav>
+          
         </div>
       </div>
-      </header>
-     <div class="background">
-        <div class="sidenav">
-          <div class="sidenav-container">
-            <nav><a href="adminRemovePicture.html">Edit/Remove Picture</a></nav> 
-            <hr>
-            <nav><a href="adminRemoveUser.html">Edit/Remove User</a></nav>
-            <hr>
-            <a href="adminCategory.html">Add/Remove Category</a> 
-            <hr>
-            <a href="adminAddPicture.html">Add Picture</a> 
-            <hr>
-            <a href="adminAddUser.html">Add User</a> 
-          </div>
-        </div>
+    </header>
+    <div class="background">
+      <div class="sidenav">
+        <div class="sidenav-container">
+          <nav><a href="adminRemovePicture.html">Edit/Remove Picture</a></nav>
+          <hr>
+          <nav><a href="adminRemoveUser.html">Edit/Remove User</a></nav>
+          <hr> <a href="adminCategory.html">Add/Remove Category</a>
+          <hr> <a href="adminAddPicture.html">Add Picture</a>
+          <hr> <a href="adminAddUser.html">Add User</a> </div>
+      </div>
       <section class="side">
         <div class="paper">
           <div class="admin-contianer">
-            <form class="side-form" action="#">
-              <label for="country">Select image</label>
-              <br>
+            <form class="side-form" action="#"> <label for="country">Select
+                image</label> <br>
               <select class="input" id="Image" name="Image">
                 <option value="1">Image 1</option>
                 <option value="2">Image 2</option>
                 <option value="3">Image 3</option>
               </select>
               <br>
-              <label for="Title">Title</label> 
+              <label for="Title">Title</label> <br>
+              <input class="input" id="Title" name="Title" placeholder="Title" type="text">
               <br>
-              <input class="input" id="Title" name="Title" placeholder="Title" type="text"> 
-              <br>
-              <label for="Description">Description</label> 
-              <br>
-              <input class="input" id="Description" name="Description" placeholder="Description" type="text">
-              <br>
-              <input class="button" value="Submit" type="submit"> 
-              <input class="reset-button" value="Delete" type="submit">
-            </form>
-          </div>
-      </div>
-    </section>
+              <label for="Description">Description</label> <br>
+              <input class="input" id="Description" name="Description" placeholder="Description"
 
+                type="text"> <br>
+              <input class="button" value="Submit" type="submit"> <input class="reset-button"
+
+value="Delete" type="submit"> </form>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="footer">
         <p class="footer-text" id="copyright">Copyright</p>
       </div>
     </footer>
-    <script src="./js/date.js"></script> 
+    <script src="./js/date.js"></script>
     <script src="./js/loginpopup.js"></script>
-</body>
+  </body>
 </html>
