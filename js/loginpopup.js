@@ -27,6 +27,6 @@ function openForm() {
      alert('Welcome to the Madness')
       }
     else {
-    alert('Did you honestly think that would word!!')
+    alert('Did you honestly think that would work!!')
    }
   }
