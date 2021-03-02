@@ -560,7 +560,7 @@ button {
 
 /* Image Slider Buttons */
 
-..nextButton {
+.nextButton {
     position: absolute;
   background-color: rgba(67, 67, 67, 0.81);
   top: 50%;
