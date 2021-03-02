@@ -557,3 +557,35 @@ button {
 .formContent > label {
   color: white;
 }
+
+/* Image Slider Buttons */
+
+.nextButton {
+  /* position: absolute; */
+  background-color: rgba(67, 67, 67, 0.81);
+  top: 75%;
+  left: 97.5%;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 25px;
+}
+
+.previousButton {
+  /* position: absolute; */
+  background-color: rgba(67, 67, 67, 0.81);
+  top: 75%;
+  right: 97.5%;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 25px;
+}
+
+.nextImg, .previousImg {
+  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(102%);
+  z-index: 1;
+}
+

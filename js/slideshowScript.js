@@ -2,24 +2,60 @@
 
 var i =0;
 var images = [];
-var time = 3000;
+var time = 4000;
 
 ///Images List
 images[0] = './images/macro.jpg';
 images[1] = './images/wildlife.jpg';
 images[2] = './images/fern.jpg';
 
-////Change Images
 
-function changeImg (){
-  document.slide.src = images[i];
+i = images.length
 
-  if (i < images.length - 1){
-    i++;
+
+//Next Image
+
+function nextImage(){
+  if(i<images.length) {
+    i = i+1;
   } else {
-    i = 0
+    i = 1;
   }
-  setTimeout('changeImg()', time);
+  document.slide.src = images[i -1];
 }
 
-window.onload = changeImg;
+//Previous Image
+
+function previousImage() {
+  if(i<images.length + 1 && i>1){
+    i = i - 1;
+  } else {
+    i = images.length;
+  }
+  document.slide.src = images[i -1];
+}
+
+////Change Images Automatically
+
+setInterval(nextImage, time);
+
+
+////Display Images Automatically
+window.onload = nextImage();
+
+
+
+////Change Images Automatically
+
+// function changeImg (){
+//   document.slide.src = images[i];
+
+//   if (i < images.length - 1){
+//     i++;
+//   } else {
+//     i = 0
+//   }
+//   setTimeout('changeImg()', time);
+// }
+
+
