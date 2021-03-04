@@ -278,11 +278,8 @@ button {
 
 .background {
   background: rgba(29, 27, 27, 0.9);
-  position: relative;
   width: 100vw;
-  height: 100%;
   z-index: -5;
-  flex-grow: 2;
 }
 
 .paper {
