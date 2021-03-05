@@ -68,6 +68,7 @@ a:hover {
 
 nav {
   flex-grow: 1;
+  text-align: right;
 }
 
 nav > button {
@@ -77,6 +78,7 @@ nav > button {
   margin: 0;
   background-color: transparent;
   font-size: 1rem;
+  padding: 0;
 }
 
 nav > button:hover {
@@ -135,10 +137,10 @@ button {
 }
 
 .logo-text {
-  padding: 5px;
   letter-spacing: 4px;
   font-weight: 80;
   font-size: 1.75rem;
+  text-align: left;
 }
 
 .dropdown-button {
@@ -277,8 +279,7 @@ button {
 .background {
   background: rgba(29, 27, 27, 0.9);
   width: 100vw;
-  z-index: -1;
-  flex-grow: 2;
+  z-index: -5;
 }
 
 .paper {
@@ -299,8 +300,13 @@ button {
 
 
 .img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -557,3 +563,38 @@ button {
 .formContent > label {
   color: white;
 }
+
+/* Image Slider Buttons */
+
+.nextButton {
+    position: absolute;
+  background-color: rgba(67, 67, 67, 0.81);
+  top: 50%;
+  right: 0;
+  vertical-align: middle;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  z-index: 25;
+  border-radius: 25px;
+}
+
+.previousButton {
+    position: absolute;
+  background-color: rgba(67, 67, 67, 0.81);
+  vertical-align: middle;
+  top: 50%;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  z-index: 25;
+  border-radius: 25px;
+}
+
+.nextImg, .previousImg {
+  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(76deg) brightness(103%) contrast(102%);
+  z-index: 1;
+}
+
+
