@@ -3,10 +3,10 @@ function openForm() {
     document.getElementById("loginForm").innerHTML = `<form class="formContent" name="loginInfo" id="login" >
     <h2>Login</h2>
     <div class="errorMessage"></div>
-    <label for="username">Username</label></b>
+    <label style="float: left;"  for="username">Username</label></b>
     <input type="text" placeholder="Username" name="username" id="username" required>
     <br>
-    <label for="psw">Password</label></b>
+    <label style="float: left;"  for="psw">Password</label></b>
     <input type="password" placeholder="Enter Password" name="psw" id="psw"required>
 
     <button class="btn" value="Submit" onclick="validateForm()">Submit</button>
